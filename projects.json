@@ -1,30 +1,37 @@
-"Projects" : [
+[
         {
-                "Name" : "Github Page",
-                "Description" : "The current plan is to make a Github page that keeps track of all my projects.
-                Partly so I can keep track of them myself.",
+                "name" : "Github Page",
+                "description" : "The current is to make a Github page that keeps track of all my projects. Partly so I can keep track of them myself."
         },
         {
-                "Name" : "Test",
-                "Description" : "There should be some text here. And some more text.
-                This text goes after a newline, but HTML shouldn't care. And some more text.",
+                "name" : "Test",
+                "description" : "There should be some text here. And some more text. This text goes after a newline, but HTML shouldn't care. And some more text."
         },
         {
-                "Name" : "Test",
-                "Description" : "There should be some text here. And some more text.
-                This text goes after a newline, but HTML shouldn't care. And some more text.",
+                "name" : "Test",
+                "description" : "There should be some text here. And some more text. This text goes after a newline, but HTML shouldn't care. And some more text."
         },
         {
-                "Name" : "Test",
-                "Description" : "There should be some text here. And some more text.
-                This text goes after a newline, but HTML shouldn't care. And some more text.",
+                "name" : "Test",
+                "description" : "There should be some text here. And some more text. This text goes after a newline, but HTML shouldn't care. And some more text."
         },
         {
-                "Name" : "Test",
-                "Description" : "There should be some text here. And some more text.
-                This text goes after a newline, but HTML shouldn't care. And some more text.",
+                "name" : "Test",
+                "description" : "There should be some text here. And some more text. This text goes after a newline, but HTML shouldn't care. And some more text."
         },
         {
-                "Description" : "Unnamed project.",
+                "description" : "Unnamed project."
         },
+        {
+                "description" : "Unnamed project."
+        },
+        {
+                "description" : "Unnamed project."
+        },
+        {
+        },
+        {
+        },
+        {
+        }
 ]

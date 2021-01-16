@@ -1,0 +1,4 @@
+<div class="project_item" onclick="projectClicked( ${identifier} )">
+  <span>${name}</span>
+  <p>${description}</p>
+</div>

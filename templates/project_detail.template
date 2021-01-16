@@ -1,0 +1,4 @@
+<div id="project_detail">
+  <h3>${name}</h3>
+  <p>${description}</p>
+</div>

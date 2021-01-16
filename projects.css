@@ -15,7 +15,7 @@
 body {
   --link_color:#ff751a;
   
-  --color_primary:black;
+  --color_primary:white;
   --color_dark:#5e5e5e;
   --color_darker:#333333;
   --color_deviant:#332fb3;
@@ -88,4 +88,91 @@ h6 {
 
 body {
   background-color: black;
+}
+
+/* Projects list */
+
+@keyframes fade-in1 {
+  from {
+    color: transparent;
+    outline-color: transparent;
+    border-color: transparent;
+  }
+}
+
+* {
+  animation-name: fade-in1;
+  animation-duration: 0.06s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0, 0, 1, 0);
+}
+
+/* Used both to contain project list and for individual project display. */
+#project_container {
+  margin:  2em;
+  
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: white;
+  
+  position: fixed;
+  top:    0;
+  bottom: 0;
+  left:   0;
+  right:  0;
+  
+  overflow-y: auto;
+  
+  scrollbar-color: var(--color_primary) #151515;
+  /* scrollbar-width: thin; */
+  
+}
+
+#project_detail {
+  margin: 2em;
+}
+
+#project_detail > :not(:first-child) {
+  padding: 0;
+  padding-left: 2em;
+}
+
+#project_detail > p {
+  
+  max-width: 40em;
+  
+  border-right-width: thick;
+  border-right-color: gray;
+  border-right-style: dashed;
+  
+  padding-bottom: 2em !important;
+  
+}
+
+.project_item {
+  
+  float: left;
+  
+  margin: 1em;
+  padding: 0.5em;
+  
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: white;
+  
+  width: 17em;
+  height: 10em;
+  
+  min-width: 10em;
+  max-height: 10em;
+  
+  overflow-y: hidden;
+  
+}
+
+.loading_text {
+  animation-name: fade-in1;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0, 0, 1, 0);
 }
