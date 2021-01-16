@@ -1,0 +1,91 @@
+/* SETUP */
+
+@font-face {
+  font-family: 'Share Tech Mono';
+  src: url('./fonts/ShareTechMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('./fonts/RobotoMono-Medium.ttf');
+}
+
+/* VARIABLES */
+
+body {
+  --link_color:#ff751a;
+  
+  --color_primary:black;
+  --color_dark:#5e5e5e;
+  --color_darker:#333333;
+  --color_deviant:#332fb3;
+  
+  --background:black;
+  --background2:#333;
+  --background3:#b3b3b3;
+  
+  --title_font: 'Share Tech Mono', monospace;
+  --default_font: 'Roboto Mono', monospace;
+}
+
+/* RESET */
+
+* {
+  position:relative;
+  min-height:0;
+  min-width:0;
+  margin:0;
+  padding:0;
+  flex-direction:column;
+  box-sizing:border-box;
+  background-position: center center;
+  background-size: cover;
+
+  font-smooth: never;
+  -webkit-font-smoothing:none;
+  -moz-osx-font-smoothing:greyscale;
+
+  scrollbar-color: var(--background1) var(--background3);
+  scrollbar-width: thin;
+  
+  /* Default font */
+  font-size: 20px;
+  font-family: var(--default_font);
+  
+  /* Default color */
+  color: white;
+}
+
+/* Elements */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title_font);
+}
+
+h1 {
+  font-size: 6.0em;
+}
+
+h2 {
+  font-size: 5.0em;
+}
+
+h3 {
+  font-size: 4.2em;
+}
+
+h4 {
+  font-size: 3.6em;
+}
+
+h5 {
+  font-size: 3.0em;
+}
+
+h6 {
+  font-size: 2.6em;
+}
+
+body {
+  background-color: black;
+}

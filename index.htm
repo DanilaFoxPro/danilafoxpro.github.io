@@ -2,11 +2,19 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Da title</title>
+    <title>Da Title</title>
   </head>
-  <body>
-    <p style = " font-size: 16vw; ">
-      Da page.
+  <body style="background-color: black;">
+    <p style="font-size: 16vw; color: white;">
+      Loading..
+    </p>
+    <p style="font-size: 1vw; color: white;">
+      You shouldn't see this, this page should
+      redirect you to 'projects' page, immediately.
     </p>
   </body>
+  <script>
+    // Cheeky redirect.
+    window.location.replace("./projects.htm");
+  </script>
 </html>
