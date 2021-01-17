@@ -170,6 +170,10 @@ body {
   
 }
 
+.project_item:hover {
+  background-color: var(--background2);
+}
+
 .loading_text {
   animation-name: fade-in1;
   animation-duration: 1s;

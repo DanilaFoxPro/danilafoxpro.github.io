@@ -2,12 +2,50 @@
         {
                 "name" : "Github Page",
                 "description" : "The current goal is to make a Github page that keeps track of all my projects. Partly so I can keep track of them myself.",
-                "done" : true
+                "done" : true,
+                "links" : [
+                        {
+                                "The Page" : "https://danilafoxpro.github.io"
+                        },
+                        {
+                                "Github" : "https://www.github.com/DanilaFoxPro/danilafoxpro.github.io"
+                        }
+                ]
         },
         {
                 "description" : "A website that displays a product selection, sorted by category. The main thing is that it's driven by a SQL database, which stores timeframes in which the products are displayed, discount times, and even product image paths. All that is then used to create product objects, which are transferred to client, and the client populates the page using JavaScript."
         },
         {
                 "description" : "A simple Godot engine game where you control a rocket trying to dodge other kamikaze rockets. Also you can shoot!"
+        },
+        {
+                "description" : "A game with three main elements; stealth, combat, and hacking. They're used in the context of infiltrating a compound. Each compound is a separate level, not arranged in meaningful order, with no explicit goals to complete. </p><p> Compounds contain a computer network, guards, workers, and security electronics. You can infiltrate a compound using any combination of hacking, stealth, and combat. Computer networks are supposed to be as extensive as possible, perhaps even extending to control electricity. In theory, you would have almost full control of the compound if you gained access to the whole compound network. This is, however, mitigated by the difficulty of the hacking puzzles, which depends on the security of the network node you're hacking.",
+                "done" : false
+        },
+        {
+                "description" : "A simple voxel engine, written in C. The goal is mostly to write solid C code, to get the hang of it.",
+                "done" : false
+        },
+        {
+                "description" : "Simple library for managing configuration files, written in C++.",
+                "done" : false
+        },
+        {
+                "name" : "Unotu",
+                "description" : "'Memory augmentation software', which is a fancy description for a program that lets you write down things. It uses cards to store those things, and tags to aid in sorting and search. Currently fighting to make the tags work, making the 'filter editor', which would be a graphic way to create search filters. </p><p> It uses SQL database for card storage, and UnotUI library for interface, which was specifically created for this project.",
+                "links" : [
+                        {
+                                "Github" : "https://www.github.com/DanilaFoxPro/Unotu"
+                        }
+                ]
+        },
+        {
+                "name" : "UnotUI",
+                "description" : "A single-threaded GUI library written in C++, using GLEW, GLFW and OpenGL.",
+                "links" : [
+                        {
+                                "Github" : "https://www.github.com/DanilaFoxPro/UnotUI"
+                        }
+                ]
         }
 ]
