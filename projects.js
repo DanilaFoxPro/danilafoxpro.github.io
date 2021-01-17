@@ -88,8 +88,13 @@ function generateProjectItem( project )
         
         var generatedHTML = fileAsString( 'templates/project_list_item.template' );
         
+        if( project.done === true ) {
+                generatedHTML = generatedHTML.replace( /\${name}/g, project.name + ' &#10003;' );
+        } else {
+                generatedHTML = generatedHTML.replace( /\${name}/g, project.name );
+        }
+        
         generatedHTML = generatedHTML.replace( /\${identifier}/g  , project.identifier );
-        generatedHTML = generatedHTML.replace( /\${name}/g        , project.name );
         generatedHTML = generatedHTML.replace( /\${description}/g , project.description );
         
         return generatedHTML;
@@ -108,6 +113,10 @@ function projectInsertDefaultFields( project ) {
         
         if( !('description' in project) ) {
                 project.description = "";
+        }
+        
+        if( !('done' in project) && project.done === true ) {
+                project.done = false;
         }
         
 }
