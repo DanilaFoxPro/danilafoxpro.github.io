@@ -1,4 +1,15 @@
 
+/* Globals. */
+
+// Used in fileAsString() for caching downloaded files.
+var cachedFilesMap = new Map();
+
+/* Cache some files. */
+
+fileAsString( 'templates/project_detail.template' );
+fileAsString( 'templates/project_list_item.template' );
+fileAsString( 'projects.json' );
+
 /* When a page is loaded, page's content is generated depending
  * on the presence of a valid hashmark, that would contain the
  * project identifier (an integer), if the project details are
@@ -161,7 +172,28 @@ function HTMLToElement( html ) {
         
 }
 
-function fileAsString( file )
+function fileAsString( file, cache = true )
+{
+        console.assert( typeof file === 'string', "A 'filename' must be of type 'string'!" );
+        if( cache === true ) {
+                const cacheEntry = cachedFilesMap.get( file );
+                if( cacheEntry != null ) {
+                        // console.log( "Using cached entry for: " + file );
+                        return cacheEntry;
+                }
+        }
+        
+        var result = fileAsStringDownload( file );
+        
+        if( result != null ) {
+                cachedFilesMap.set( file, result );
+        }
+        
+        return result;
+        
+}
+
+function fileAsStringDownload( file )
 {
         var   xmlhttp = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
         const url = file;
