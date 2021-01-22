@@ -65,6 +65,11 @@ function displaySpecificProject( identifier )
         
         const project = projectByIdentifier( identifier );
         
+        if( project == null ) {
+                document.body.innerHTML = "<h3>Failed to load project.</h3>";
+                return;
+        }
+        
         generatedHTML = generatedHTML.replace( /\${name}/g        , project.name );
         generatedHTML = generatedHTML.replace( /\${description}/g , project.description );
         
