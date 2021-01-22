@@ -47,5 +47,18 @@
                                 "Github" : "https://www.github.com/DanilaFoxPro/UnotUI"
                         }
                 ]
+        },
+        {
+                "description" : "A Royal Battle-style game set in a post-apocalyptic (or perhaps mid-apocalyptic) world."
+        },
+        {
+                "name" : "gm_opencity",
+                "description" : "A Garry's Mod city sandbox map, that tries to be as open as possible. Also contains NPCs that loiter around.",
+                "done" : true
+        },
+        {
+                "name" : "gm_street",
+                "description" : "One of the first maps I published on Garry's Mod workshop.",
+                "done" : true
         }
 ]
